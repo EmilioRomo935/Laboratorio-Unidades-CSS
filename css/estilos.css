@@ -70,3 +70,66 @@ html {font-size: 16px; }
         width: 50vw;
     }
 }
+
+.tarjeta {
+    width: 700px; padding: 25px;
+}
+
+.titulo{
+    font-size: 28px;
+}
+
+.contendor{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+}
+
+.panel-cursos{
+    width: 80%;
+    min-height: 60vh;
+    margin: 2rem auto;
+    border: 2px solid black;
+    padding: 2rem;
+}
+
+.panel-encabezado{
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 2px solid black;
+}
+
+.panel-encabezado h2{
+    font-size: 3vw;
+    margin: 0;
+}
+
+.cursos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.tarjeta-curso{
+    border: 2px solid black;
+    padding: 1rem;
+    text-align: center;
+}
+
+.panel-footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-top: 2px solid black;
+}
+
+@media (max-width: 600px) {
+    .cursos {
+        grid-template-columns: 1fr;
+    }
+
+    .panel-encabezado h2 {
+        font-size: 6vw;
+    }
+}
+
